@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Text Assistant",
+    "version": "1.0",
+    "permissions": ["contextMenus", "scripting", "storage", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Smart Text Assistant"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [
+          "config.js",
+          "api.js", 
+          "utils.js",
+          "textInput.js",
+          "selection.js",
+          "voice.js",
+          "dictionary.js",
+          "popups.js",
+          "content.js"
+        ]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
