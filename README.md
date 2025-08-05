@@ -38,7 +38,7 @@ Mặc dù các mô hình từ Hugging Face đã đủ tốt cho nhiều tác v�
 - Kiểm soát chất lượng đầu ra và phong cách ngôn ngữ
 - Trải nghiệm quy trình fine-tuning thực tế trong dự án NLP
 
-Các chức năng khác như Grammar Correction, Grammar Check được gọi thông qua API để đảm bảo tốc độ xử lý và độ ổn định.
+Các chức năng khác được gọi thông qua API để đảm bảo tốc độ xử lý và độ ổn định.
 
 ---
 
@@ -66,7 +66,7 @@ Các chức năng khác như Grammar Correction, Grammar Check được gọi th
 ## 🛡️ Vấn đề bảo mật
 
 Extension không lưu trữ bất kỳ nội dung cá nhân nào của người dùng
-Các request gửi đến model thông qua Hugging Face Spaces hoặc server riêng, không qua bên thứ ba
+Các request gửi đến model thông qua Hugging Face Spaces hoặc API, không qua bên thứ ba
 
 ---
 
