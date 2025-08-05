@@ -1,48 +1,53 @@
-# 🧠 Smart Text Assistant – AI English Helper Extension
+# 🧠 Smart Text Assistant – Extension hỗ trợ giao tiếp tiếng Anh bằng AI
 
-Smart Text Assistant là một tiện ích mở rộng trình duyệt giúp bạn **giao tiếp tiếng Anh một cách thuận tiện hơn** bằng cách tích hợp trí tuệ nhân tạo (AI) để:
+## 🚀 Giới thiệu
 
-✅ Viết lại câu tiếng Anh theo 2 phong cách:
-- **Professional** (chuyên nghiệp)
-- **Casual** (thân mật)
+**Smart Text Assistant** là một tiện ích mở rộng trình duyệt (browser extension) giúp người dùng **viết lại câu tiếng Anh theo phong cách chuyên nghiệp hoặc thân mật**, **sửa lỗi ngữ pháp**, **kiểm tra ngữ pháp**, **chuyển văn bản thành giọng nói**, và thậm chí **tra từ điển mini** – tất cả được tích hợp gọn nhẹ và hiển thị trực tiếp trên trình duyệt web.
 
-✅ Sửa lỗi ngữ pháp tự động (Grammar Correction)
-
-✅ Kiểm tra lỗi ngữ pháp và highlight (Grammar Check)
+Mục tiêu của extension là giúp việc **giao tiếp tiếng Anh trở nên dễ dàng, thuận tiện và hiệu quả hơn** trong nhiều ngữ cảnh, từ công việc cho đến học tập.
 
 ---
 
-## 🚀 Mục tiêu
+## 🧠 Các chức năng chính
 
-Giúp người dùng, đặc biệt là người học tiếng Anh hoặc làm việc trong môi trường quốc tế, dễ dàng:
-- Chỉnh sửa, cải thiện câu tiếng Anh mà không cần mở trang web riêng
-- Giao tiếp đúng ngữ cảnh hơn: lịch sự khi viết mail, thoải mái khi nhắn tin
-- Tự kiểm tra và sửa ngữ pháp nhanh chóng
-
----
-
-## 🧩 Tính năng chính
-
-🔹 **Rewrite English Sentence**
-- Bôi đen đoạn văn bản → chọn icon *Rewrite*
-- AI sẽ trả về 2 phiên bản: *Casual* và *Professional*
-
-🔹 **Grammar Correction**
-- Sửa lỗi ngữ pháp tự động bằng mô hình AI
-
-🔹 **Grammar Check**
-- So sánh câu gốc và câu đã sửa → hiển thị các phần sai bằng gạch đỏ
+- ✍️ **Rewrite câu văn**: Chuyển câu tiếng Anh sang 2 phong cách:
+  - **Professional** – trang trọng, phù hợp công việc
+  - **Casual** – thân mật, đời thường
+- ✅ **Grammar Correction**: Sửa lỗi ngữ pháp và chính tả
+- 🔎 **Grammar Check**: Phân tích và chỉ ra lỗi trong câu
+- 🗣️ **Voice Input**: Nhập văn bản bằng giọng nói (Tiếng Việt hoặc Tiếng Anh)
+- 🔊 **Text to Speech**: Đọc văn bản tiếng Anh hoặc tiếng Việt
+- 📚 **Từ điển mini**: Xem nghĩa và phát âm của từ
+- 💾 **Saved Words**: Lưu lại từ vựng quan trọng để ôn tập
 
 ---
 
-## 🤖 Mô hình AI sử dụng
+## 🤖 Về AI Model
 
-🔹 **Rewrite model**  
-- Được fine-tuned từ mô hình `ramsrigouthamg/t5_paraphraser` để phù hợp cho nhiệm vụ rewrite theo 2 phong cách.  
-- Được host trên [Hugging Face Spaces](https://huggingface.co/spaces)
+Các mô hình AI sử dụng trong extension đều được lấy từ Hugging Face:
 
-🔹 **Grammar model**  
-- Dựa trên mô hình pre-trained `flan-T5-large-grammar-synthesis`, được sử dụng lại từ Hugging Face.
+| Chức năng            | Mô hình sử dụng                                                                 |
+|----------------------|----------------------------------------------------------------------------------|
+| **Rewrite**          | [`ramsrigouthamg/t5_paraphraser`](https://huggingface.co/ramsrigouthamg/t5_paraphraser) *(có fine-tune lại)* |
+| **Grammar Correction** | [`flan-t5-large-grammar-synthesis`](https://huggingface.co/pszemraj/flan-t5-large-grammar-synthesis) |
+
+### 🛠️ Vì sao tính năng Rewrite được fine-tune?
+
+Mặc dù các mô hình từ Hugging Face đã đủ tốt cho nhiều tác vụ, mình muốn thử sức với việc **fine-tune một mô hình Rewrite riêng**, nhằm:
+- Thích nghi tốt hơn với nhu cầu viết lại câu theo **2 phong cách rõ ràng** (Professional và Casual)
+- Kiểm soát chất lượng đầu ra và phong cách ngôn ngữ
+- Trải nghiệm quy trình fine-tuning thực tế trong dự án NLP
+
+Các chức năng khác như Grammar Correction, Grammar Check được gọi thông qua API để đảm bảo tốc độ xử lý và độ ổn định.
+
+---
+
+## 🧪 Cách sử dụng
+
+1. **Tải extension** về và cài đặt vào trình duyệt (Chrome/Edge)
+2. **Highlight đoạn văn tiếng Anh** trên web và click chuột phải để chọn tính năng mong muốn
+3. Popup sẽ xuất hiện và hiển thị kết quả AI
+4. Có thể copy, nghe đọc hoặc lưu từ vựng ngay trong giao diện
 
 ---
 
@@ -54,4 +59,18 @@ Giúp người dùng, đặc biệt là người học tiếng Anh hoặc làm v
 
 3. Bật **Developer Mode** → nhấn **Load unpacked** → chọn thư mục `/extension`
 
-4. Truy cập một trang bất kỳ, bôi đen đoạn văn bản tiếng Anh → click để sử dụng tính năng Rewrite hoặc Grammar
+4. Truy cập một trang bất kỳ, bôi đen đoạn văn bản tiếng Anh → click icon để sử dụng tính năng
+
+---
+
+## 🛡️ Vấn đề bảo mật
+
+Extension không lưu trữ bất kỳ nội dung cá nhân nào của người dùng
+Các request gửi đến model thông qua Hugging Face Spaces hoặc server riêng, không qua bên thứ ba
+
+---
+
+## 📫 Góp ý & Đóng góp
+
+Mình rất mong nhận được phản hồi từ mọi người để cải thiện extension.  
+Hãy tạo issue hoặc pull request nếu bạn muốn đóng góp thêm 🙌
