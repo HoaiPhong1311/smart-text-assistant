@@ -50,6 +50,7 @@ Các chức năng khác được gọi thông qua API để đảm bảo tốc �
 
 > 💡 **Mẹo:**  
 > - Nhấn `Ctrl + Shift + V` để **mở nhanh tính năng Voice Input**
+> - Bôi đen một từ để **sử dụng Từ điển mini** 
 
 ---
 
