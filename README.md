@@ -44,10 +44,12 @@ Các chức năng khác được gọi thông qua API để đảm bảo tốc �
 
 ## 🧪 Cách sử dụng
 
-1. **Tải extension** về và cài đặt vào trình duyệt (Chrome/Edge)
-2. **Highlight đoạn văn tiếng Anh** trên web và click chuột phải để chọn tính năng mong muốn
-3. Popup sẽ xuất hiện và hiển thị kết quả AI
-4. Có thể copy, nghe đọc hoặc lưu từ vựng ngay trong giao diện
+1. **Bôi đen câu tiếng Anh cần xử lý**
+2. **Chuột phải** và chọn `Smart Text Assistant: Choose Function` từ **context menu**
+3. Giao diện popup sẽ hiện ra cho bạn chọn và sử dụng chức năng mong muốn
+
+> 💡 **Mẹo:**  
+> - Nhấn `Ctrl + Shift + V` để **mở nhanh tính năng Voice Input**
 
 ---
 
